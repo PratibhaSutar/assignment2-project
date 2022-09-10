@@ -1,0 +1,29 @@
+<div style="float:left;">
+  <h2>Registration Form</h2>
+  <div>
+    Name : <span style="color:red;">{{ nameMessage }}</span>
+    <br>
+    <input type="text" [(ngModel)]="name" />
+
+  </div>
+  <div>
+    Email : <span style="color:red;">{{ emailMessage }}</span>
+    <br>
+    <input type="text" [(ngModel)]="email" />
+  </div>
+
+  <div>
+    Password: <span style="color:red;">{{ passwordMessage }}</span><br>
+    <input type="password" [(ngModel)]="password" />
+
+  </div>
+
+  <div>
+    Confirm Password: <span style="color:red;">{{ cpasswordMessage }}</span><br>
+    <input type="password" [(ngModel)]="cpassword" />
+
+  </div>
+  <div>
+    <button (click)="register()">Register</button>
+  </div>
+</div>
